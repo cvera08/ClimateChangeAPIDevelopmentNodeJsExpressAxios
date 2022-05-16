@@ -27,6 +27,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 <br/>
 - Homebrew:  
 https://www.atlassian.com/git/tutorials/install-git
+  
 ```bash
 brew install git
 ```
@@ -40,6 +41,7 @@ You can follow one of these links:
 https://nodejs.org/en/download/current/  
 <br/>
 - Using Homebrew:  
+
 ```bash
 brew install node
 ```
