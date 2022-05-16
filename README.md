@@ -7,12 +7,12 @@ ___
 
 ## Table of contents[![](https://i.ibb.co/2kHmnLX/image.png)](#table-of-contents)
 1. [Requisites](#requisites)
-2. [To run this project](#run-project)
-3. [Start the project](#start)
-4. [Online resources](#online)
-5. [Composition](#composition)
-   - [Tools/Libraries](#composition)
-6. [MIT licence](#MIT)
+2. [To run this project](#to-run-this-project)
+3. [Start the project](#start-the-project)
+4. [Online resources](#online-resources)
+5. [Composition](#composition-toolslibraries)
+   - [Tools/Libraries](#composition-toolslibraries)
+6. [MIT licence](#mit-licence)
 
 ___
 
