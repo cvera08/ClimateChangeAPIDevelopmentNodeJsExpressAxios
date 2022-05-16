@@ -8,11 +8,11 @@ ___
 ## Table of contents[![](https://i.ibb.co/2kHmnLX/image.png)](#table-of-contents)
 1. [Requisites](#requisites)
 2. [To run this project](#run-project)
-3. [Start the Project](#start)
-4. [Online Resources](#online)
+3. [Start the project](#start)
+4. [Online resources](#online)
 5. [Composition](#composition)
    - [Tools/Libraries](#composition)
-6. [MIT Licence](#MIT)
+6. [MIT licence](#MIT)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 
 
-## To run this project: [![](https://i.ibb.co/2kHmnLX/image.png)](#run-project)
+## To run this project:[![](https://i.ibb.co/2kHmnLX/image.png)](#run-project)
 
 You can run this project on your local machine. Just pull it down (git clone) and install dependencies:
 
@@ -61,7 +61,7 @@ npm i
 
 ___
 
-## Start the Project: [![](https://i.ibb.co/2kHmnLX/image.png)](#start)
+## Start the project:[![](https://i.ibb.co/2kHmnLX/image.png)](#start)
 
 Now run the server:
 
@@ -84,7 +84,7 @@ or install some add-on/extension like this:
 
 ___
 
-## Online Resources:  [![](https://i.ibb.co/2kHmnLX/image.png)](#online)
+## Online resources:[![](https://i.ibb.co/2kHmnLX/image.png)](#online)
 
 RapidAPI:
 - https://rapidapi.com/cvera08/api/climate-crisis
@@ -108,7 +108,7 @@ ___
 - Heroku (Build, deliver, monitor and scale apps. Run, and operate applications entirely in the cloud)
 ___
 
-## MIT Licence:[![](https://i.ibb.co/2kHmnLX/image.png)](#MIT)
+## MIT licence:[![](https://i.ibb.co/2kHmnLX/image.png)](#MIT)
 
 Copyright (c) 2022 Carlos Vera
 
