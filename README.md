@@ -27,7 +27,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 <br/>
 - Homebrew:  
 https://www.atlassian.com/git/tutorials/install-git
-  
+
 ```bash
 brew install git
 ```
@@ -105,9 +105,11 @@ ___
 - Express (Backend framework for Node.js)  
 - Axios (Send HTTP requests to rest endpoints)  
 - Nodemon (Monitor script - Restart the node application when the file changes)  
-<br>
-- Rapidapi (Developers can search and test the APIs, subscribe, and connect to the APIs)
-- Heroku (Build, deliver, monitor and scale apps. Run, and operate applications entirely in the cloud)
+<br>  
+
+- Rapidapi (Developers can search and test the APIs, subscribe, and connect to the APIs)  
+- Heroku (Build, deliver, monitor and scale apps. Run, and operate applications entirely in the cloud)  
+
 ___
 
 ## MIT licence:[![](https://i.ibb.co/2kHmnLX/image.png)](#MIT)
