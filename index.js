@@ -74,10 +74,32 @@ app.get('/', (req, res) => {
     //res.type('html')
     //008000 007b80
     res.send(`
-    <body style="background-color:powderblue;">
-    <h1 style="color:008000;"><center>Welcome to Climate-Change News API</center></h1>
-    <h3 style="color:4c9141;">Available resources:</h3>
-     <ul>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <!-- ###<<start> Web specifications -->
+      <link rel="icon" href="https://i.ibb.co/nDNrqNV/image.png">
+      <!-- image of the tab -->
+      <title>Climate Change - Climate Crisis</title>
+      <!-- title of the page in the browser tab -->
+      <meta name="description" content="Climate Change Live News">
+      <meta property="og:title" content="Climate Change - Climate Crisis" />
+      <!-- Linkedin short description for example (https://prnt.sc/193y7yw, https://prnt.sc/193yhoy) and whatsapp main thumbnail title for example (https://prnt.sc/193z12x) -->
+      <meta property="og:url" content="https://climatechangerestapi.herokuapp.com/" />
+      <meta property="og:description" content="Climate Change Live News">
+      <!-- for example whatsapp inline description - https://prnt.sc/193z12x , similar with Facebook -->
+      <meta property="og:image" content="https://i.ibb.co/nDNrqNV/image.png">
+      <!-- image thumbnail of the site https://cvera08.github.io/FactureroUruguayo (you can check it in linkedin, whatsapp, facebook for example - https://prnt.sc/193zz7n) -->
+      <meta property="og:type" content="website"/>
+      <meta property="og:locale:alternate" content="es_UY"/>
+      <!-- ###<end> Web specifications -->
+   </head>
+   <body style="background-color:powderblue;">
+      <h1 style="color:008000;">
+         <center>Welcome to Climate-Change News API</center>
+      </h1>
+      <h3 style="color:4c9141;">Available resources:</h3>
+      <ul>
         <li><a href='https://climatechangerestapi.herokuapp.com/'>climatechangerestapi.herokuapp.com</a></li>
          <li><a href='https://climatechangerestapi.herokuapp.com/news'>climatechangerestapi.herokuapp.com/news</a></li>
          <li><a href='https://climatechangerestapi.herokuapp.com/full-news'>climatechangerestapi.herokuapp.com/full-news</a></li>
@@ -100,6 +122,8 @@ app.get('/', (req, res) => {
                     </ol>
         </li>
     </ul>
+   </body>
+</html>
      `);
 })
 
