@@ -74,29 +74,29 @@ app.get('/', (req, res) => {
     //res.type('html')
     //008000 007b80
     res.send(`
-    <body style="background-color:powderblue;">
-    <h1 style="color:008000;"><center>Welcome to Climate-Change News API</center></h1>
-    <h3 style="color:4c9141;">Available resources:</h3>
+    <body style="background-color:151b24;">
+    <h1 style="color:#74fa5f;"><center>Welcome to Climate-Change News API</center></h1>
+    <h3 style="color:74fa5f;">Available resources:</h3>
      <ul>
-        <li><a href='http://localhost:8000/'>localhost:8000</a></li>
-         <li><a href='http://localhost:8000/news'>localhost:8000/news</a></li>
-         <li><a href='http://localhost:8000/full-news'>localhost:8000/full-news</a></li>
+        <li ><a style="color:#fff!important" href='http://localhost:8000/'>localhost:8000</a></li>
+         <li><a style="color:#fff!important" href='http://localhost:8000/news'>localhost:8000/news</a></li>
+         <li><a style="color:#fff!important" href='http://localhost:8000/full-news'>localhost:8000/full-news</a></li>
          <li>
-                <a href='http://localhost:8000/news/guardian'>localhost:8000/news/:newspaperName</a>
+                <a style="color:#fff!important" href='http://localhost:8000/news/guardian'>localhost:8000/news/:newspaperName</a>
                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                        <li><a href='http://localhost:8000/news/thetimes'> thetimes </a></li>
-                        <li><a href='http://localhost:8000/news/guardian'> guardian </a></li>
-                        <li><a href='http://localhost:8000/news/telegraph'> telegraph </a></li>
-                        <li><a href='http://localhost:8000/news/cityam'> cityam </a></li>
-                        <li><a href='http://localhost:8000/news/nyt'> nyt </a></li>
-                        <li><a href='http://localhost:8000/news/latimes'> latimes </a></li>
-                        <li><a href='http://localhost:8000/news/smh'> smh </a></li>
-                        <li><a href='http://localhost:8000/news/un'> un </a></li>
-                        <li><a href='http://localhost:8000/news/bbc'> bbc </a></li>
-                        <li><a href='http://localhost:8000/news/es'> es </a></li>
-                        <li><a href='http://localhost:8000/news/sun'> sun </a></li>
-                        <li><a href='http://localhost:8000/news/dm'> dm </a></li>
-                        <li><a href='http://localhost:8000/news/nyp'> nyp </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/thetimes'> thetimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/guardian'> guardian </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/telegraph'> telegraph </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/cityam'> cityam </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyt'> nyt </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/latimes'> latimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/smh'> smh </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/un'> un </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/bbc'> bbc </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/es'> es </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/sun'> sun </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/dm'> dm </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyp'> nyp </a></li>
                     </ol>
         </li>
     </ul>
@@ -157,33 +157,33 @@ app.get('/news/:newspaperName', (req, res) => {
     } catch (error) {
         console.log(error)
         res.send(`
-        <body style="background-color:powderblue;">
-        <h3 style="color:008000;"><center>Welcome to Climate-Change News API</center></h1>
-        <h3> <center>INVALID URL </center></h3>
-        <h4 style="color:4c9141;">Valid resources:</h3>
-         <ul>
-            <li><a href='http://localhost:8000/'>localhost:8000</a></li>
-             <li><a href='http://localhost:8000/news'>localhost:8000/news</a></li>
-             <li><a href='http://localhost:8000/full-news'>localhost:8000/full-news</a></li>
-             <li>
-                <a href='http://localhost:8000/news/guardian'>localhost:8000/news/:newspaperName</a>
+        <body style="background-color:151b24;">
+        <h1 style="color:#74fa5f;"><center>Welcome to Climate-Change News API</center></h1>
+        <h3 style="color:yellow"> <center>INVALID URL </center> </h3>
+        <h4 style="color:74fa5f;">Valid resources:</h3>
+        <ul>
+        <li ><a style="color:#fff!important" href='http://localhost:8000/'>localhost:8000</a></li>
+         <li><a style="color:#fff!important" href='http://localhost:8000/news'>localhost:8000/news</a></li>
+         <li><a style="color:#fff!important" href='http://localhost:8000/full-news'>localhost:8000/full-news</a></li>
+         <li>
+                <a style="color:#fff!important" href='http://localhost:8000/news/guardian'>localhost:8000/news/:newspaperName</a>
                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                        <li><a href='http://localhost:8000/news/thetimes'> thetimes </a></li>
-                        <li><a href='http://localhost:8000/news/guardian'> guardian </a></li>
-                        <li><a href='http://localhost:8000/news/telegraph'> telegraph </a></li>
-                        <li><a href='http://localhost:8000/news/cityam'> cityam </a></li>
-                        <li><a href='http://localhost:8000/news/nyt'> nyt </a></li>
-                        <li><a href='http://localhost:8000/news/latimes'> latimes </a></li>
-                        <li><a href='http://localhost:8000/news/smh'> smh </a></li>
-                        <li><a href='http://localhost:8000/news/un'> un </a></li>
-                        <li><a href='http://localhost:8000/news/bbc'> bbc </a></li>
-                        <li><a href='http://localhost:8000/news/es'> es </a></li>
-                        <li><a href='http://localhost:8000/news/sun'> sun </a></li>
-                        <li><a href='http://localhost:8000/news/dm'> dm </a></li>
-                        <li><a href='http://localhost:8000/news/nyp'> nyp </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/thetimes'> thetimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/guardian'> guardian </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/telegraph'> telegraph </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/cityam'> cityam </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyt'> nyt </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/latimes'> latimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/smh'> smh </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/un'> un </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/bbc'> bbc </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/es'> es </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/sun'> sun </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/dm'> dm </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyp'> nyp </a></li>
                     </ol>
-             </li>
-        </ul>
+        </li>
+    </ul>
          `);
     }
 
