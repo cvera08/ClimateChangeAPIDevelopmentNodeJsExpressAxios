@@ -94,31 +94,31 @@ app.get('/', (req, res) => {
       <meta property="og:locale:alternate" content="es_UY"/>
       <!-- ###<end> Web specifications -->
    </head>
-   <body style="background-color:powderblue;">
-      <h1 style="color:008000;">
+   <body style="background-color:151b24;">
+      <h1 style="color:#74fa5f;">
          <center>Welcome to Climate-Change News API</center>
       </h1>
-      <h3 style="color:4c9141;">Available resources:</h3>
+      <h3 style="color:74fa5f;">Available resources:</h3>
       <ul>
-        <li><a href='https://climatechangerestapi.herokuapp.com/'>climatechangerestapi.herokuapp.com</a></li>
-         <li><a href='https://climatechangerestapi.herokuapp.com/news'>climatechangerestapi.herokuapp.com/news</a></li>
-         <li><a href='https://climatechangerestapi.herokuapp.com/full-news'>climatechangerestapi.herokuapp.com/full-news</a></li>
+        <li><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/'>climatechangerestapi.herokuapp.com</a></li>
+         <li><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news'>climatechangerestapi.herokuapp.com/news</a></li>
+         <li><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/full-news'>climatechangerestapi.herokuapp.com/full-news</a></li>
          <li>
-                <a href='https://climatechangerestapi.herokuapp.com/news/guardian'>climatechangerestapi.herokuapp.com/news/:newspaperName</a>
+                <a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/guardian'>climatechangerestapi.herokuapp.com/news/:newspaperName</a>
                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/thetimes'> thetimes </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/guardian'> guardian </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/telegraph'> telegraph </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/cityam'> cityam </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/nyt'> nyt </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/latimes'> latimes </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/smh'> smh </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/un'> un </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/bbc'> bbc </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/es'> es </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/sun'> sun </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/dm'> dm </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/nyp'> nyp </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/thetimes'> thetimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/guardian'> guardian </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/telegraph'> telegraph </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/cityam'> cityam </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/nyt'> nyt </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/latimes'> latimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/smh'> smh </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/un'> un </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/bbc'> bbc </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/es'> es </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/sun'> sun </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/dm'> dm </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/nyp'> nyp </a></li>
                     </ol>
         </li>
     </ul>
@@ -181,33 +181,33 @@ app.get('/news/:newspaperName', (req, res) => {
     } catch (error) {
         console.log(error)
         res.send(`
-        <body style="background-color:powderblue;">
-        <h3 style="color:008000;"><center>Welcome to Climate-Change News API</center></h1>
-        <h3> <center>INVALID URL </center></h3>
-        <h4 style="color:4c9141;">Valid resources:</h3>
-         <ul>
-            <li><a href='https://climatechangerestapi.herokuapp.com/'>climatechangerestapi.herokuapp.com</a></li>
-             <li><a href='https://climatechangerestapi.herokuapp.com/news'>climatechangerestapi.herokuapp.com/news</a></li>
-             <li><a href='https://climatechangerestapi.herokuapp.com/full-news'>climatechangerestapi.herokuapp.com/full-news</a></li>
-             <li>
-                <a href='https://climatechangerestapi.herokuapp.com/news/guardian'>climatechangerestapi.herokuapp.com/news/:newspaperName</a>
+        <body style="background-color:151b24;">
+        <h3 style="color:#74fa5f;"><center>Welcome to Climate-Change News API</center></h1>
+        <h1 style="color:yellow"> <center>INVALID URL </center> </h3>
+        <h4 style="color:74fa5f;">Valid resources:</h3>
+    <ul>
+        <li><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/'>climatechangerestapi.herokuapp.com</a></li>
+         <li><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news'>climatechangerestapi.herokuapp.com/news</a></li>
+         <li><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/full-news'>climatechangerestapi.herokuapp.com/full-news</a></li>
+         <li>
+                <a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/guardian'>climatechangerestapi.herokuapp.com/news/:newspaperName</a>
                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/thetimes'> thetimes </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/guardian'> guardian </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/telegraph'> telegraph </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/cityam'> cityam </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/nyt'> nyt </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/latimes'> latimes </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/smh'> smh </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/un'> un </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/bbc'> bbc </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/es'> es </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/sun'> sun </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/dm'> dm </a></li>
-                        <li><a href='https://climatechangerestapi.herokuapp.com/news/nyp'> nyp </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/thetimes'> thetimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/guardian'> guardian </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/telegraph'> telegraph </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/cityam'> cityam </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/nyt'> nyt </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/latimes'> latimes </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/smh'> smh </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/un'> un </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/bbc'> bbc </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/es'> es </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/sun'> sun </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/dm'> dm </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangerestapi.herokuapp.com/news/nyp'> nyp </a></li>
                     </ol>
-             </li>
-        </ul>
+        </li>
+    </ul>
          `);
     }
 
