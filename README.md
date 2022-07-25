@@ -74,7 +74,9 @@ npm run start
 Open [http://localhost:8000](http://localhost:8000) with your browser to see the results of the scrape in your terminal. You can also use certain parameters to get news from individual sources
 
 You may see something like this:  
-![alt text](https://i.ibb.co/mTSSXCn/localhost-8000.png)
+[comment]: <> (v1: https://i.ibb.co/mTSSXCn/localhost-8000.png)
+[comment]: <> (v2: https://i.imgur.com/C1fp2h8.png)
+![alt text](https://i.imgur.com/IVGRe25.png)
 
 Now you can copy the results and use an online json formatter like this: 
 - [jsonformatter](https://jsonformatter.curiousconcept.com/#)
