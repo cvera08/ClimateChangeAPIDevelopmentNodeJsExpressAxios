@@ -77,6 +77,9 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
+    <link rel="icon" href="https://github.com/cvera08/ClimateChangeAPIDevelopmentNodeJsExpressAxios/blob/herokumaster/data/favicon.ico"> <!-- image of the tab -->
+    <title>Climate Crisis</title> <!-- page title in the browser tab -->
+    <meta property="og:image" content="https://i.ibb.co/Tbmnhkp/og-image.jpg"> <!-- site image thumbnail -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     body {
