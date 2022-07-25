@@ -74,7 +74,43 @@ app.get('/', (req, res) => {
     //res.type('html')
     //008000 007b80
     res.send(`
-    <body style="background-color:151b24;">
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+    }
+    
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+    </style>
+    </head>
+
+    <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="https://i.imgur.com/Ed1D25E.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="content">
     <h1 style="color:#74fa5f;"><center>Welcome to Climate-Change News API</center></h1>
     <h3 style="color:74fa5f;">Available resources:</h3>
      <ul>
@@ -100,6 +136,11 @@ app.get('/', (req, res) => {
                     </ol>
         </li>
     </ul>
+    </div>
+    
+    <script> </script>
+    </body>
+    </html>
      `);
 })
 

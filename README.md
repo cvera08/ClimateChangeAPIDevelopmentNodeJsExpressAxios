@@ -75,7 +75,8 @@ Open [http://localhost:8000](http://localhost:8000) with your browser to see the
 
 You may see something like this:  
 [comment]: <> (v1: https://i.ibb.co/mTSSXCn/localhost-8000.png)
-![alt text](https://i.imgur.com/C1fp2h8.png)
+[comment]: <> (v2: https://i.imgur.com/C1fp2h8.png)
+![alt text](https://i.imgur.com/IVGRe25.png)
 
 Now you can copy the results and use an online json formatter like this: 
 - [jsonformatter](https://jsonformatter.curiousconcept.com/#)
