@@ -104,6 +104,22 @@ app.get('/', (req, res) => {
       width: 100%;
       padding: 20px;
     }
+
+   #footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 20px;
+    //background: grey;
+    opacity: 1; // Leave this as 1
+    background-color: rgba(0,0,0,0.6);
+    color: gray;
+    text-align: center;
+}
+
+
     </style>
     </head>
 
@@ -141,8 +157,10 @@ app.get('/', (req, res) => {
         </li>
     </ul>
     </div>
-    
     <script> </script>
+
+    <div id="footer">Node.js - Express - Axios - Cheerio - Nodemon - RapidAPI - Heroku    <a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a> <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" style="color: white;font-size: 80%;">Author: Carlos Vera</a> </div>
+
     </body>
     </html>
      `);
