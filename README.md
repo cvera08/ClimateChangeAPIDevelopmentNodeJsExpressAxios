@@ -1,7 +1,5 @@
 # ClimateChangeAPIDevelopmentNodeJsExpressAxios
-This repository is intended to retrieve live climate-change URLs by using Web scraping and APIs  
-<br/>
-<br/>
+This repository is intended to retrieve live climate-change URLs by using Web scraping and APIs.  
 
 ___
 
@@ -17,7 +15,7 @@ ___
 ___
 
 ## Requisites:[![](https://i.ibb.co/2kHmnLX/image.png)](#requisites)
-<br/>
+
 
 ##### 1- Install Git locally
 You can follow one of these links:  
@@ -25,7 +23,8 @@ You can follow one of these links:
 - Windows, Linux, Mac:  
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git  
 <br/>
-- Homebrew:  
+
+- Or using Homebrew:  
 https://www.atlassian.com/git/tutorials/install-git
 
 ```bash
@@ -40,7 +39,8 @@ You can follow one of these links:
 - Windows, Linux, Mac:  
 https://nodejs.org/en/download/current/  
 <br/>
-- Using Homebrew:  
+
+- Or using Homebrew:   
 
 ```bash
 brew install node
@@ -52,7 +52,8 @@ ___
 
 ## To run this project:[![](https://i.ibb.co/2kHmnLX/image.png)](#run-project)
 
-You can run this project on your local machine. Just pull it down (git clone) and install dependencies:
+You can run this project on your local machine.  
+Just pull it down (git clone) and install dependencies:
 
 ```bash
 git clone https://github.com/cvera08/ClimateChangeAPIDevelopmentNodeJsExpressAxios.git
@@ -71,9 +72,10 @@ Now run the server:
 npm run start
 ```
 
-Open [http://localhost:8000](http://localhost:8000) with your browser to see the results of the scrape in your terminal. You can also use certain parameters to get news from individual sources
+Open [http://localhost:8000](http://localhost:8000) with your browser to see the results of the scrape in your terminal. You can also use certain parameters to get news from individual sources.
 
 You may see something like this:  
+
 [comment]: <> (v1: https://i.ibb.co/mTSSXCn/localhost-8000.png)
 [comment]: <> (v2: https://i.imgur.com/C1fp2h8.png)
 ![alt text](https://i.imgur.com/IVGRe25.png)
@@ -103,15 +105,15 @@ ___
 ## Composition: (Tools/Libraries)[![](https://i.ibb.co/2kHmnLX/image.png)](#composition)
 
 
-- Cheerio (Pickup HTML elements on a web page)  
-- Express (Backend framework for Node.js)  
-- Axios (Send HTTP requests to rest endpoints)  
-- Nodemon (Monitor script - Restart the node application when the file changes)  
-<br>  
+- Cheerio (Pickup HTML elements on a web page).  
+- Express (Backend framework for Node.js).  
+- Axios (Send HTTP requests to rest endpoints).  
+- Nodemon (Monitor script - Restart the node application when the file changes).  
+<br>   
 
-- Rapidapi (Developers can search and test the APIs, subscribe, and connect to the APIs)  
-- Heroku (Build, deliver, monitor and scale apps. Run, and operate applications entirely in the cloud)  
-
+* More:
+  * Rapidapi (Developers can search and test the APIs, subscribe, and connect to the APIs).  
+  * Heroku (Build, deliver, monitor and scale apps. Run, and operate applications entirely in the cloud).  
 ___
 
 ## MIT licence:[![](https://i.ibb.co/2kHmnLX/image.png)](#MIT)
