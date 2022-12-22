@@ -81,6 +81,8 @@ app.get('/', (req, res) => {
     <title>Climate Crisis</title> <!-- page title in the browser tab -->
     <meta property="og:image" content="https://i.ibb.co/Tbmnhkp/og-image.jpg"> <!-- site image thumbnail -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <style>
     body {
       margin: 0;
@@ -102,16 +104,17 @@ app.get('/', (req, res) => {
       background: rgba(0, 0, 0, 0.5);
       color: #f1f1f1;
       width: 100%;
+      height: 80%;
       padding: 20px;
     }
 
    #footer {
-    position: fixed;
+    position: absolute;
     padding: 10px 10px 0px 10px;
     bottom: 0;
     width: 100%;
     /* Height of the footer*/
-    height: 20px;
+    height: 13%;
     //background: grey;
     opacity: 1; // Leave this as 1
     background-color: rgba(0,0,0,0.6);
@@ -119,6 +122,12 @@ app.get('/', (req, res) => {
     text-align: center;
 }
 
+.linkedin {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+   
+  } 
 
     </style>
     </head>
@@ -156,10 +165,12 @@ app.get('/', (req, res) => {
                     </ol>
         </li>
     </ul>
-    </div>
-    <script> </script>
 
     <div id="footer">Node.js - Express - Axios - Cheerio - Nodemon - RapidAPI - Heroku    <a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a> <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" style="color: white;font-size: 80%;">Author: Carlos Vera</a> </div>
+    <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" title="LinkedIn" class="linkedin btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+    
+    </div>
+    <script> </script>
 
     </body>
     </html>
