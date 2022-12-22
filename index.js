@@ -63,41 +63,37 @@ const newspapers = [
 const articles = []
 const full_articles = []
 
-app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
-
-const available_resources = "Welcome to my Climate Change News API\n\nAvailable resourcess:"
-let str = "Hello World!\nThis is my string";
-console.log(str)
+app.listen(PORT, () => console.log(`server running on PORT ${PORT} - http://localhost:8000/`))
 
 app.get('/', (req, res) => {
-    //res.set('Content-Type', 'text/plain')
-    //res.type('html')
-    //008000 007b80
     res.send(`
     <!DOCTYPE html>
-    <html>
-    <head>
-    <link rel="icon" href="https://raw.githubusercontent.com/cvera08/ClimateChangeAPIDevelopmentNodeJsExpressAxios/herokumaster/data/favicon.ico"> <!-- image of the tab -->
-    <title>Climate Crisis</title> <!-- page title in the browser tab -->
-    <meta property="og:image" content="https://i.ibb.co/Tbmnhkp/og-image.jpg"> <!-- site image thumbnail -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <style>
+<html>
+
+<head>
+  <link rel="icon"
+    href="https://raw.githubusercontent.com/cvera08/ClimateChangeAPIDevelopmentNodeJsExpressAxios/herokumaster/data/favicon.ico">
+  <!-- image of the tab -->
+  <title>Climate Crisis</title> <!-- page title in the browser tab -->
+  <meta property="og:image" content="https://i.ibb.co/Tbmnhkp/og-image.jpg"> <!-- site image thumbnail -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <style>
     body {
       margin: 0;
       font-family: Arial;
       font-size: 17px;
     }
-    
+
     #myVideo {
       position: fixed;
       right: 0;
       bottom: 0;
-      min-width: 100%; 
+      min-width: 100%;
       min-height: 100%;
     }
-    
+
     .content {
       position: fixed;
       bottom: 0;
@@ -108,72 +104,95 @@ app.get('/', (req, res) => {
       padding: 20px;
     }
 
-   #footer {
-    position: absolute;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/
-    height: 13%;
-    //background: grey;
-    opacity: 1; // Leave this as 1
-    background-color: rgba(0,0,0,0.6);
-    color: gray;
-    text-align: center;
-}
+    #footer {
+      position: absolute;
+      padding: 10px 10px 0px 10px;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/
+      height: 13%;
+     /*  opacity: 1; */ /* Leave this as 1 */
+      background-color: rgba(0, 0, 0, 0.6);
+      color: gray;
+      text-align: center;
+    }
 
-.linkedin {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-   
-  } 
+    .linkedin {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
 
-    </style>
-    </head>
+    }
+  </style>
+</head>
 
-    <body>
-    <video autoplay muted loop id="myVideo">
-      <source src="https://i.imgur.com/Ed1D25E.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    
-    <div class="content">
-    <h1 style="color:#74fa5f;"><center>Welcome to Climate-Change News API</center></h1>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="https://i.imgur.com/Ed1D25E.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="content">
+    <h1 style="color:#74fa5f;">
+      <center>Welcome to Climate-Change News API</center>
+    </h1>
     <h3 style="color:74fa5f;">Available resources:</h3>
     <ul>
-        <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/'>/</a></li>
-         <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news'>/news</a></li>
-         <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/full-news'>/full-news</a></li>
-         <li>
-                <a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'>/news/:newspaperName</a>
-                    <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/thetimes'> thetimes </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'> guardian </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/telegraph'> telegraph </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/cityam'> cityam </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyt'> nyt </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/latimes'> latimes </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/smh'> smh </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/un'> un </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/bbc'> bbc </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/es'> es </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/sun'> sun </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/dm'> dm </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyp'> nyp </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/no-valid'> INVALID </a></li>
-                    </ol>
-        </li>
+      <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/'>/</a>
+      </li>
+      <li><a style="color:#fff!important"
+          href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news'>/news</a></li>
+      <li><a style="color:#fff!important"
+          href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/full-news'>/full-news</a></li>
+      <li>
+        <a style="color:#fff!important"
+          href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'>/news/:newspaperName</a>
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/thetimes'> thetimes </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'> guardian </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/telegraph'> telegraph </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/cityam'> cityam </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyt'> nyt </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/latimes'> latimes </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/smh'> smh </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/un'> un </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/bbc'> bbc </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/es'> es </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/sun'> sun </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/dm'> dm </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyp'> nyp </a></li>
+          <li style="color:#47ebb4"><a style="color:#fff!important"
+              href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/no-valid'> INVALID </a></li>
+        </ol>
+      </li>
     </ul>
 
-    <div id="footer">Node.js - Express - Axios - Cheerio - Nodemon - RapidAPI - Heroku    <a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a> <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" style="color: white;font-size: 80%;">Author: Carlos Vera</a> </div>
-    <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" title="LinkedIn" class="linkedin btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
-    
-    </div>
-    <script> </script>
+    <div id="footer">Node.js - Express - Axios - Cheerio - Nodemon - RapidAPI - Heroku <a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a> <a
+        href="https://www.linkedin.com/in/carlos-vera-06a6b053/" style="color: white;font-size: 80%;">Author: Carlos
+        Vera</a> </div>
+    <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" title="LinkedIn"
+      class="linkedin btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
 
-    </body>
-    </html>
+  </div>
+  <script> </script>
+
+</body>
+
+</html>
      `);
 })
 
