@@ -3,6 +3,7 @@ const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
 const res = require('express/lib/response')
+const path = require("path");
 
 const app = express()
 
@@ -68,98 +69,7 @@ const full_articles = []
 app.listen(PORT, () => console.log(`server running on PORT ${PORT} - http://localhost:8000/`))
 
 app.get('/', (req, res) => {
-    res.send(`
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="icon"
-        href="https://raw.githubusercontent.com/cvera08/ClimateChangeAPIDevelopmentNodeJsExpressAxios/herokumaster/data/favicon.ico">
-    <!-- image of the tab -->
-    <title>Climate Crisis</title> <!-- page title in the browser tab -->
-    <meta property="og:image" content="https://i.ibb.co/Tbmnhkp/og-image.jpg"> <!-- site image thumbnail -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body>
-    <video autoplay muted loop id="myVideo">
-        <source src="https://i.imgur.com/Ed1D25E.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-
-    <div class="content">
-        <h1 class="title">
-            Welcome to Climate-Change News API
-        </h1>
-        <h3>Available resources:</h3>
-        <ul>
-            <li><a 
-                    href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/'>/</a>
-            </li>
-            <li><a 
-                    href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news'>/news</a></li>
-            <li><a 
-                    href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/full-news'>/full-news</a></li>
-            <li>
-                <a 
-                    href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'>/news/:newspaperName</a>
-                <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/thetimes'> thetimes
-                        </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'> guardian
-                        </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/telegraph'>
-                            telegraph </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/cityam'> cityam
-                        </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyt'> nyt </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/latimes'> latimes
-                        </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/smh'> smh </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/un'> un </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/bbc'> bbc </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/es'> es </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/sun'> sun </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/dm'> dm </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyp'> nyp </a></li>
-                    <li class='li-green'><a 
-                            href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/no-valid'> INVALID
-                        </a></li>
-                </ol>
-            </li>
-        </ul>
-
-        <div id="footer">Node.js - Express - Axios - Cheerio - Nodemon - RapidAPI - Heroku <a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a> <a
-                href="https://www.linkedin.com/in/carlos-vera-06a6b053/" style="color: white;font-size: 80%;">Author:
-                Carlos
-                Vera</a> </div>
-        <a href="https://www.linkedin.com/in/carlos-vera-06a6b053/" title="LinkedIn"
-            class="linkedin btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
-
-    </div>
-    <script> </script>
-
-</body>
-
-</html>
-     `);
+    res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 app.get('/news', (req, resp) => {
