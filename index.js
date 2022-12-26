@@ -98,6 +98,8 @@ app.get('/', (req, res) => {
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
+            max-height: 100%;
+            overflow: scroll;
             padding: 20px;
         }
 
