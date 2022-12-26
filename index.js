@@ -81,8 +81,7 @@ app.get('/', (req, res) => {
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <style>
         body {
-            margin: 0;
-            font-family: Arial;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #myVideo {
@@ -94,31 +93,37 @@ app.get('/', (req, res) => {
         }
 
         .content {
-            position: fixed;
+            position: absolute;
             bottom: 0px;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
-            height: 80%;
             padding: 20px;
         }
 
+        h1.title {
+            text-align: center;
+            top: 10px;
+            position: relative;
+        }
+
         ul {
-            max-height: 70%;
+            padding-bottom: 10px;
+            height: 70%;
             overflow-y: auto;
         }
 
         #footer {
-            padding: 10px 10px 0px 10px;
+            padding: 10px 10px 10px 10px;
             width: 100%;
-            max-height: 10%;
+            height: 8%;
             background-color: rgba(0, 0, 0, 0.6);
             color: gray;
             text-align: center;
         }
 
         .linkedin {
-            max-height: 10%;
+            height: 10%;
             bottom: 0px;
             width: 100%;
         }
@@ -132,8 +137,8 @@ app.get('/', (req, res) => {
     </video>
 
     <div class="content">
-        <h1 style="color:#74fa5f;">
-            <center>Welcome to Climate-Change News API</center>
+        <h1 class="title" style="color:#74fa5f;">
+            Welcome to Climate-Change News API
         </h1>
         <h3 style="color:74fa5f;">Available resources:</h3>
         <ul>
