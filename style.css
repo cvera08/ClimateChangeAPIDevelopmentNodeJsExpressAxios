@@ -25,12 +25,21 @@ h1.title {
     text-align: center;
     top: 10px;
     position: relative;
+    color:#74fa5f;
 }
 
 ul {
     padding-bottom: 10px;
     height: 70%;
     overflow-y: auto;
+}
+
+li.li-green {
+    color: #47ebb4;
+}
+
+li a {
+    color: #fff!important;
 }
 
 #footer {

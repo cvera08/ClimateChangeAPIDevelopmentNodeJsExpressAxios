@@ -91,54 +91,54 @@ app.get('/', (req, res) => {
     </video>
 
     <div class="content">
-        <h1 class="title" style="color:#74fa5f;">
+        <h1 class="title">
             Welcome to Climate-Change News API
         </h1>
-        <h3 style="color:74fa5f;">Available resources:</h3>
+        <h3>Available resources:</h3>
         <ul>
-            <li><a style="color:#fff!important"
+            <li><a 
                     href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/'>/</a>
             </li>
-            <li><a style="color:#fff!important"
+            <li><a 
                     href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news'>/news</a></li>
-            <li><a style="color:#fff!important"
+            <li><a 
                     href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/full-news'>/full-news</a></li>
             <li>
-                <a style="color:#fff!important"
+                <a 
                     href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'>/news/:newspaperName</a>
                 <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/thetimes'> thetimes
                         </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'> guardian
                         </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/telegraph'>
                             telegraph </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/cityam'> cityam
                         </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyt'> nyt </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/latimes'> latimes
                         </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/smh'> smh </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/un'> un </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/bbc'> bbc </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/es'> es </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/sun'> sun </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/dm'> dm </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyp'> nyp </a></li>
-                    <li style="color:#47ebb4"><a style="color:#fff!important"
+                    <li class='li-green'><a 
                             href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/no-valid'> INVALID
                         </a></li>
                 </ol>
