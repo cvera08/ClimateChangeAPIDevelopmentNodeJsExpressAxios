@@ -6,6 +6,8 @@ const res = require('express/lib/response')
 
 const app = express()
 
+app.use(express.static(__dirname + '/')); //css support
+
 const newspapers = [
     {
         name: 'cityam',
@@ -79,57 +81,7 @@ app.get('/', (req, res) => {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #myVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-        }
-
-        .content {
-            position: absolute;
-            bottom: 0px;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            width: 100%;
-            max-height: 100%;
-            overflow: scroll;
-            padding: 20px;
-        }
-
-        h1.title {
-            text-align: center;
-            top: 10px;
-            position: relative;
-        }
-
-        ul {
-            padding-bottom: 10px;
-            height: 70%;
-            overflow-y: auto;
-        }
-
-        #footer {
-            padding: 10px 10px 10px 10px;
-            width: 100%;
-            height: 8%;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: gray;
-            text-align: center;
-        }
-
-        .linkedin {
-            height: 10%;
-            bottom: 0px;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
