@@ -171,3 +171,6 @@ function getBaseUrl(name) {
     }
     return baseUrl;
 }
+
+// Export the Express API
+module.exports = app;
