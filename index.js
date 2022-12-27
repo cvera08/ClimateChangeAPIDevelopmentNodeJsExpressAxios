@@ -125,7 +125,7 @@ app.get('/news/:newspaperName', (req, res) => {
         newspaperAddress = newspapers.filter(newspaper => newspaper.name === newspaperName)[0].address
     } catch (error) {
         console.log(error)
-        res.sendFile(path.join(__dirname + '/invalid.html'));
+        res.sendFile(path.join(__dirname + '/404.html'));
     }
 
     //console.log(newspaperAddress)
