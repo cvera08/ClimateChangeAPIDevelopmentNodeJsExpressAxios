@@ -125,36 +125,7 @@ app.get('/news/:newspaperName', (req, res) => {
         newspaperAddress = newspapers.filter(newspaper => newspaper.name === newspaperName)[0].address
     } catch (error) {
         console.log(error)
-        res.send(`
-        <body style="background-color:151b24;">
-        <h3 style="color:#74fa5f;"><center>Welcome to Climate-Change News API</center></h1>
-        <h1 style="color:yellow"> <center>INVALID URL </center> </h3>
-        <h4 style="color:74fa5f;">Valid resources:</h4>
-        <ul>
-            <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/'>/</a></li>
-            <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news'>/news</a></li>
-            <li><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/full-news'>/full-news</a></li>
-            <li>
-                    <a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'>/news/:newspaperName</a>
-                        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/thetimes'> thetimes </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/guardian'> guardian </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/telegraph'> telegraph </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/cityam'> cityam </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyt'> nyt </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/latimes'> latimes </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/smh'> smh </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/un'> un </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/bbc'> bbc </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/es'> es </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/sun'> sun </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/dm'> dm </a></li>
-                            <li style="color:#47ebb4"><a style="color:#fff!important" href='https://climatechangeapidevelopmentnodejsexpress.onrender.com/news/nyp'> nyp </a></li>
-                        </ol>
-            </li>
-        </ul>
-        </body>
-         `);
+        res.sendFile(path.join(__dirname + '/invalid.html'));
     }
 
     //console.log(newspaperAddress)
