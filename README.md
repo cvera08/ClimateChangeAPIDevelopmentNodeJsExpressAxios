@@ -95,8 +95,8 @@ ___
 RapidAPI:
 - https://rapidapi.com/cvera08/api/climate-crisis
 
-Heroku app (online version):
-- https://climatechangerestapi.herokuapp.com/
+Live Site (ex Heroku app):
+- https://climate-change-api-demo.vercel.app/
 
 
 
