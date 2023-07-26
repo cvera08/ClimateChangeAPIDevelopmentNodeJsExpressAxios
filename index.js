@@ -69,7 +69,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/news', (req, resp) => {
-    axios.get('https://www.theguardian.com/environment/climate-crisis')
+    axios.get('https://www.bbc.co.uk/news/science_and_environment')
         .then((response) => {
             const html = response.data
             const $ = cheerio.load(html)
