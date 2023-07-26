@@ -123,12 +123,12 @@ app.get('/', (req, res) => {
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyt'> nyt </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/latimes'> latimes </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/smh'> smh </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/un'> un </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/bbc'> bbc </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/es'> es </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/sun'> sun </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/dm'> dm </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyp'> nyp </a></li>
+                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/no-valid'> <i>-INVALID-</i> </a></li>
                     </ol>
         </li>
     </ul>
@@ -212,7 +212,6 @@ app.get('/news/:newspaperName', (req, res) => {
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/nyt'> nyt </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/latimes'> latimes </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/smh'> smh </a></li>
-                        <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/un'> un </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/bbc'> bbc </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/es'> es </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/sun'> sun </a></li>
