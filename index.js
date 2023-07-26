@@ -36,10 +36,6 @@ const newspapers = [
         address: 'https://www.smh.com.au/environment/climate-change'
     },
     {
-        name: 'un',
-        address: 'https://www.un.org/climatechange',
-    },
-    {
         name: 'bbc',
         address: 'https://www.bbc.co.uk/news/science_and_environment'
     },
