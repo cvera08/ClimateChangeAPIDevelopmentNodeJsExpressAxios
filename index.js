@@ -114,7 +114,7 @@ app.get('/', (req, res) => {
          <li><a style="color:#fff!important" href='http://localhost:8000/news'>localhost:8000/news</a></li>
          <li><a style="color:#fff!important" href='http://localhost:8000/full-news'>localhost:8000/full-news</a></li>
          <li>
-                <a style="color:#fff!important" href='http://localhost:8000/news/guardian'>localhost:8000/news/:newspaperName</a>
+                <a style="color:#fff!important" href='http://localhost:8000/news/nyt'>localhost:8000/news/:newspaperName</a>
                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/thetimes'> thetimes </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/guardian'> guardian </a></li>
@@ -203,7 +203,7 @@ app.get('/news/:newspaperName', (req, res) => {
          <li><a style="color:#fff!important" href='http://localhost:8000/news'>localhost:8000/news</a></li>
          <li><a style="color:#fff!important" href='http://localhost:8000/full-news'>localhost:8000/full-news</a></li>
          <li>
-                <a style="color:#fff!important" href='http://localhost:8000/news/guardian'>localhost:8000/news/:newspaperName</a>
+                <a style="color:#fff!important" href='http://localhost:8000/news/nyt'>localhost:8000/news/:newspaperName</a>
                     <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/thetimes'> thetimes </a></li>
                         <li style="color:#47ebb4"><a style="color:#fff!important" href='http://localhost:8000/news/guardian'> guardian </a></li>
